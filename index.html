@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sign Up Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="An example sign up/sign in page for an app or website"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <!-- Start of New Account Form -->
+        <form action="#">
+          <h1>Create New Account</h1>
+          <!-- Start of Socials -->
+          <div class="social-container">
+            <a href="#" class="social"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="social"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="social"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <!-- End of Socials -->
+
+          <span>or sign up using your e-mail address?</span>
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button>Sign Up</button>
+        </form>
+        <!-- End of New Account Form -->
+      </div>
+
+      <div class="form-container sign-in-container">
+        <!-- Start of Sign In Form -->
+        <form action="#">
+          <h1>Sign In</h1>
+          <!-- Start of Socials -->
+          <div class="social-container">
+            <a href="#" class="social"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="social"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="social"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <!-- End of Socials -->
+          <span>Or sign in using your username></span>
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <a href="#" id="'forgotPwd">Forgot your password?</a>
+          <button>Sign In</button>
+        </form>
+        <!-- End of Sign In Form -->
+      </div>
+
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>Sign in to start where you left off!</p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello there!</h1>
+            <p>Sign up now and start your new journey today!</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
